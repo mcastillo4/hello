@@ -63,7 +63,7 @@ public class Application extends SpringBootServletInitializer {
                 .port(8080)
                 .bindingMode(RestBindingMode.off);
 
-            rest("/hello/get").description("REST service")
+            rest("").description("REST service")
                 .get().description("Hello World")
                     .route().routeId("hello-world")
                     .process(new ProcessorFuse())
